@@ -14,7 +14,7 @@ public class BlogController {
     public String createPost(@RequestParam String title, @RequestParam String content) {
         String post = title + ":" + content;
         posts.add(post);
-        return "Post created";
+        return "New Post created";
     }
 
     @GetMapping
