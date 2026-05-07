@@ -35,6 +35,7 @@ public class BlogController {
         return "OK";
     }
 
+
     @DeleteMapping("/{id}")
     public String deletePost(@PathVariable int id) {
         posts.remove(id);
@@ -50,4 +51,5 @@ public String getTotalWordCount() {
     }
     return "Total words: " + total;
 }
+
 }
